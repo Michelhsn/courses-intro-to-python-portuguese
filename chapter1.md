@@ -1,13 +1,13 @@
 ---
-title_meta  : Chapter 1
-title       : Python Basics
-description : An introduction to the basic concepts of Python. Learn how to use Python both interactively and through a script. Create your first variables and acquaint yourself with Python's basic data types.
-attachments :
+title_meta  : Capítulo 1
+title       : Python Básico
+description : Uma introdução aos conceitos básicoa de Python. Aprenda a usar Python interativamente e através de script. Crie suas primeiras variáveis e se familiarize com o básico de Python.
+anexo       :
   slides_link : https://s3.amazonaws.com/assets.datacamp.com/course/intro_to_python/ch1_slides.pdf
 
 
 ---
-## Hello Python!
+## Olá Python!
 
 ```yaml
 type: VideoExercise
@@ -24,7 +24,7 @@ key: d5509896f7
 //videos.datacamp.com/transcoded/735_intro_to_python/v2/hls-ch1_1.master.m3u8
 
 ---
-## The Python Interface
+## A Interface Python
 
 ```yaml
 type: NormalExercise
@@ -34,19 +34,19 @@ skills: 2
 key: bdc52f0e19
 ```
 
-In the Python script on the right, you can type Python code to solve the exercises. If you hit _Submit Answer_, your python script (`script.py`) is executed and the output is shown in the IPython Shell. DataCamp checks whether your submission is correct and gives you feedback.
+No script Python na direita, você pode escrever códigos em Python para resolver exercícios. Se você clicar _Submit Answer_, seu script python (`script.py`) é executado e a saída é mostrada no IPython Shell. DataCamp checa se sua submissão está correta e te dá um feedback.
 
-You can hit _Submit Answer_ as often as you want. If you're stuck, you can click _Get Hint_, and ultimately _Get Solution_.
+Você pode clicar em _Submit Answer_ quantas vezes quiser. Se você estiver travado, você pode clicar em  _Get Hint_, e por último em _Get Solution_.
 
-You can also use the IPython Shell interactively by simply typing commands and hitting Enter. When you work in the shell directly, your code will not be checked for correctness so it is a great way to experiment.
+Você pode também usar o IPython Shell interativamente simplesmente digitando comando e apertando Enter. Quando você trabalha no shell diretamente, seu código será checado para correção então essa é uma ótima forma de experimentar.
 
-`@instructions`
-- Experiment in the IPython Shell; type `5 / 8`, for example.
-- Add another line of code to the Python script: `print(7 + 10)`.
-- Hit _Submit Answer_ to execute the Python script and receive feedback.
+`@instruções`
+- Expetimente usar o IPython Shell; digite `5 / 8`, por exemplo.
+- Adicione uma outra linha de código ao script Python: `print(7 + 10)`.
+- Aperte _Submit Answer_ para executar o script Python e receber o feedback.
 
-`@hint`
-Simply add `print(7 + 10)` in the script on the right and hit 'Submit Answer'.
+`@dica`
+Simplesmente adicione `print(7 + 10)` no script da direita e aperte 'Submit Answer'.
 
 `@pre_exercise_code`
 ```{python}
@@ -55,34 +55,34 @@ Simply add `print(7 + 10)` in the script on the right and hit 'Submit Answer'.
 
 `@sample_code`
 ```{python}
-# Example, do not modify!
+# Exemplo, não modifico!
 print(5 / 8)
 
-# Put code below here
+# Coloque o código aqui embaixo
 
 ```
 
-`@solution`
+`@solução`
 ```{python}
-# Example, do not modify!
+# Exemplo, não modifique!
 print(5 / 8)
 
-# Put code below here
+# Coloque o código aqui embaixo
 print(7 + 10)
 ```
 
 `@sct`
 ```{python}
-msg = "Don't remove the first statement. It is an example which is coded for you!"
+msg = "Não remova a primeira confirmação. Este é um exemplo que foi feito por você!"
 test_function("print", 1, not_called_msg = msg, incorrect_msg = msg)
 
-msg = "Have you added `print(7 + 10)` to the script, in addition to the `print()` command that was already there?"
+msg = "Você adicionou `print(7 + 10)` ao script, somado ao comando `print()` que já estava lá?"
 test_function("print", 2, not_called_msg = msg, incorrect_msg = msg)
-success_msg("Great!")
+success_msg("Ótimo!")
 ```
 
 ---
-## When to use Python?
+## Quando usar Python?
 
 ```yaml
 type: MultipleChoiceExercise
@@ -92,34 +92,34 @@ skills: 2
 key: 9703b117fb
 ```
 
-Python is a pretty versatile language. For which applications can you use Python?
+Python é uma linguagem bem versátil. Em quais aplicações você pode usar Python?
 
-`@instructions`
-- You want to do some quick calculations.
-- For your new business, you want to develop a database-driven website.
-- Your boss asks you to clean and analyze the results of the latest satisfaction survey.
-- All of the above.
+`@instruções`
+- Você quer fazer alguns cálculos rápidos.
+- Para seu novo negócio, você quer desenvolver um website direcionado a base de dados.
+- Seu chefe o pede para analisar os resultados da última pesquisa de satisfação.
+- Tudo acima.
 
-`@hint`
-Filip mentioned in the video that Python can be used to build practically any piece of software.
+`@dica`
+Filip mencionou no vídeo que o Python pode ser usado para construir praticamente qualquer parte de software.
 
 `@pre_exercise_code`
 ```{python}
-# pec comes here
+# pec aqui
 ```
 
 `@sct`
 ```{python}
-msg1 = "Incorrect. Python can do simple and quick calculations, but it is much more than that!"
-msg2 = "Incorrect. There is a very popular framework to build database-driven websites (Django), but Python can do much more."
-msg3 = "Incorrect. Python is a powerful tool to do data analysis, but you can also use it for other ends."
-msg4 = "Correct! Python is an extremely versatile language."
+msg1 = "Incorreto. Python pode fazer cálculos simples e rápidos, mas é muito mais que isso!"
+msg2 = "Incorreto. Existe um framework muito popular para construir websites orientados a dados (Django), mas Python pode fazer muito mais."
+msg3 = "Incorreto. Python é uma ferramenta poderosa para análise de dados, mas você pode também usá-lo com outros fins."
+msg4 = "Correto! Python é uma linguagem extremamente versátil."
 test_mc(4, [msg1, msg2, msg3, msg4])
 
 ```
 
 ---
-## Any comments?
+## Algum comentário?
 
 ```yaml
 type: NormalExercise
@@ -129,15 +129,15 @@ skills: 2
 key: 7c4a738a13
 ```
 
-Something that Filip didn't mention in his videos is that you can add **comments** to your Python scripts. Comments are important to make sure that you and others can understand what your code is about.
+Uma coisa que Filip não mencionou nos seus vídeos é que você pode adicionar **comments** em seus scripts Python. Comentários são importantes para ter certeza que você e outros podem entender do que se trata seu código.
 
-To add comments to your Python script, you can use the `#` tag. These comments are not run as Python code, so they will not influence your result. As an example, take the comment on the right, `# Just testing division`; it is completely ignored during execution.
+Para adicionar comentários em seu script Python. você pode usar a tag `#`. Esses comentários não são executados como código Python, então eles não irão influenciar no resultado. Como um exemplo, pegue o comentário da direita, `# Just testing division`; este é completamente ignorado durante a execução.
 
-`@instructions`
-Above the `print(7 + 10)`, add the comment `# Addition works too`.
+`@isntruções`
+Sobre o `print(7 + 10)`, adicione o comentário `# Addition works too`.
 
-`@hint`
-For this exercise you only have to add one line of comments. It won't run as Python code. Add `# Addition works too` right above `print(7 + 10)`.
+`@dica`
+Para esse exercício você pode adicionar uma linha de comentário. Isto não será executado no código Python. Adicione `# Addition works too` sobre `print(7 + 10)`.
 
 `@pre_exercise_code`
 ```{python}
@@ -169,7 +169,7 @@ success_msg("Great!")
 ```
 
 ---
-## Python as a calculator
+## Python como uma calculadora
 
 ```yaml
 type: NormalExercise
@@ -179,18 +179,18 @@ skills: 2
 key: 0f7c039428
 ```
 
-Python is perfectly suited to do basic calculations. Apart from addition, subtraction, multiplication and division, there is also support for more advanced operations such as:
+Python é perfeitamente viável para se fazer cálculos básicos. Além de adição, subtração, multiplicação e divisão, há também suporte para operações mais avançadas como:
 
-- Exponentiation: `**`. This operator raises the number to its left to the power of the number to its right. For example `4**2` will give `16`.
-- Modulo: `%`. This operator returns the remainder of the division of the number to the left by the number on its right. For example `18 % 7` equals `4`.
+- Exponenciação: `**`. Esse operador eleva o número da esquerda a potencia do número à direita. Por exemplo `4**2` resultará `16`.
+- Módulo: `%`. Esse operador retorna o reso da divisão do número da esquerda pelo número da direita. Por exemplo `18 % 7` igual a `4`.
 
-The code in the script on the right gives some examples.
+O código no script da direita trás alguns examplos.
 
-`@instructions`
-Suppose you have $100, which you can invest with a 10% return each year. After one year, it's $100 \times 1.1 = 110$ dollars, and after two years it's $100 \times 1.1 \times 1.1 = 121$. Add code on the right to calculate how much money you end up with after 7 years.
+`@instruções`
+Suponha que você tem $100, você quer investi-lo com uma taxa de 10% de juros por ano. depois de um ano, terá $100 \times 1.1 = 110$ dólares, e depois de dois anos terá $100 \times 1.1 \times 1.1 = 121$. Adicione código na direita para calcular quanto você terá depois de 7 anos.
 
-`@hint`
-After two years you have $100 \times 1.1 \times 1.1 = 100 \times 1.1^2$. How much do you have after 7 years than? Use `*` and `**`.
+`@dica`
+Depois de dois anos voce tem $100 \times 1.1 \times 1.1 = 100 \times 1.1^2$. Quando você terá depois de 7 anos então? Use `*` e `**`.
 
 `@pre_exercise_code`
 ```{python}
@@ -244,7 +244,7 @@ success_msg("Time for another video!")
 ```
 
 ---
-## Variables & Types
+## Variáveis & Tipos
 
 ```yaml
 type: VideoExercise
@@ -262,7 +262,7 @@ key: ef8356fb92
 
 
 ---
-## Variable Assignment
+## atribuição de Variáveis
 
 ```yaml
 type: NormalExercise
@@ -272,23 +272,23 @@ skills: 2
 key: 4bf65ad83e
 ```
 
-In Python, a variable allows you to refer to a value with a name. To create a variable use `=`, like this example:
+Em Python, uma variável permite a você fazer uma referência a um valor com um nome. Para criar a variável use `=`, como neste exemplo:
 
 ```
 x = 5
 ```
 
-You can now use the name of this variable, `x`, instead of the actual value, `5`.
+Você agora pode usar o nome desta variável, `x`, no lugar do valor atual, `5`.
 
-Remember, `=` in Python means _assignment_, not equality!
+Lembre-se, `=` em Python significa _atribuição_, não igualdade!
 
-`@instructions`
-- Create a variable `savings` with the value 100.
-- Check out this variable by typing `print(savings)` in the script.
+`@instruções`
+- Crie uma variável `savings` com o valor 100.
+- Verifique essa variável digitando `print(savings)` no script.
 
-`@hint`
-- Type `savings = 100` to create the variable `savings`.
-- After creating the variable `savings`, you can type `print(savings)`.
+`@dica`
+- Digite `savings = 100` para criar uma variável `savings`.
+- Depois de criar a variável `savings`, você pode digitar `print(savings)`.
 
 `@pre_exercise_code`
 ```{python}
@@ -321,7 +321,7 @@ success_msg("Great! Let's try to do some calculations with this variable now!")
 ```
 
 ---
-## Calculations with variables
+## Cálculos com variáveis
 
 ```yaml
 type: NormalExercise
@@ -331,18 +331,18 @@ skills: 2
 key: ff06cedeb4
 ```
 
-Remember how you calculated the money you ended up with after 7 years of investing $100? You did something like this:
+Lembre como você calculou o total que você conseguiu depois de 7 anos com o investimento de $100? Você fez algo como:
 
 ```
 100 * 1.10 ** 7
 ```
 
-Instead of calculating with the actual values, you can use variables instead. The `savings` variable you've created in the previous exercise represents the $100 you started with. It's up to you to create a new variable to represent `1.10` and then redo the calculations!
+No lugar de calcular os valores atuais, você pode usar variáveis. A variável `savings` que você criou no exercício anterior representa os $100 que você começou. Você pode criar uma nova variável para representar `1.10` e entaõ refazer os cálculos!
 
-`@instructions`
-- Create a variable `factor`, equal to `1.10`.
-- Use `savings` and `factor` to calculate the amount of money you end up with after 7 years. Store the result in a new variable, `result`.
-- Print out the value of `result`.
+`@instruções`
+- Crie uma variável `factor`, igual a `1.10`.
+- Use `savings` e `factor` para calcular o total que você conseguiu depois dos 7 anos. Armazene o resultado em uma variável nova, `result`.
+- Imprima os valores de `result`.
 
 `@hint`
 - To create the variable `factor`, use `factor = 1.10`.
