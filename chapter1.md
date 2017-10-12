@@ -344,10 +344,10 @@ No lugar de calcular os valores atuais, você pode usar variáveis. A variável 
 - Use `savings` e `factor` para calcular o total que você conseguiu depois dos 7 anos. Armazene o resultado em uma variável nova, `result`.
 - Imprima os valores de `result`.
 
-`@hint`
-- To create the variable `factor`, use `factor = 1.10`.
-- In the example code block of the assignment, replace `100` with `savings` and `1.10` with `factor`: `savings * factor ** 7`.
-- Use the [`print()`](https://docs.python.org/3/library/functions.html#print) function to print the value of a variable.
+`@dica`
+- Para criar a variável variable `factor`, use `factor = 1.10`.
+- No bloco de código do exemplo de atribuição, substitua `100` por `savings` e `1.10` por `factor`: `savings * factor ** 7`.
+- Use a função [`print()`](https://docs.python.org/3/library/functions.html#print) para imprimir o valor da variável.
 
 `@pre_exercise_code`
 ```{python}
@@ -356,30 +356,30 @@ No lugar de calcular os valores atuais, você pode usar variáveis. A variável 
 
 `@sample_code`
 ```{python}
-# Create a variable savings
+# Crie a variável savings
 savings = 100
 
-# Create a variable factor
+# Crie a variável factor
 
 
-# Calculate result
+# Calcule o Resultado
 
 
-# Print out result
+# Imprima o resultado
 ```
 
-`@solution`
+`@solução`
 ```{python}
-# Create a variable savings
+# Crie a variável savings
 savings = 100
 
-# Create a variable factor
+# Crie a variável factor
 factor = 1.1
 
-# Calculate result
+# Calcule o Resultado
 result = savings * factor ** 7
 
-# Print out result
+# Imprima o resultado
 print(result)
 ```
 
@@ -395,7 +395,7 @@ success_msg("Great!")
 ```
 
 ---
-## Other variable types
+## Outros tipos de variáveis
 
 ```yaml
 type: NormalExercise
@@ -405,23 +405,23 @@ skills: 2
 key: 006b48561f
 ```
 
-In the previous exercise, you worked with two Python data types:
+No exercício anterior, você trabalhou com dois tipos de dados em Python:
 
-- `int`, or integer: a number without a fractional part. `savings`, with the value `100`, is an example of an integer.
-- `float`, or floating point: a number that has both an integer and fractional part, separated by a point. `factor`, with the value `1.10`, is an example of a float.
+- `int`, ou inteiro: um número sem a parte fracionária. `savings`, com valor `100`, é um exemplo de um inteiro.
+- `float`, ou ponto flutuante: um número que tem a parte inteira e a fracionária, separadas por um ponto. `factor`, com o valor `1.10`, é um exemplo de um float.
 
-Next to numerical data types, there are two other very common data types:
+Depois dos tipos de dados numéricos, existem outros dois tipos de dados comuns:
 
-- `str`, or string: a type to represent text. You can use single or double quotes to build a string.
-- `bool`, or boolean: a type to represent logical values. Can only be `True` or `False` (the capitalization is important!).
+- `str`, ou string: um tipo que representa texto. Você pode usar aspas simples ou duplas para construir uma string.
+- `bool`, ou booleano: um tipo que representa valores lógicos. Pode ser apenas `True` ou `False` (A capitalização é importante!).
 
-`@instructions`
-- Create a new string, `desc`, with the value `"compound interest"`.
-- Create a new boolean, `profitable`, with the value `True`.
+`@instruções`
+- Crie uma nova string, `desc`, com o valor `"compound interest"`.
+- Crie um novo booleano, `profitable`, com o valor `True`.
 
-`@hint`
-- To create a variable in Python, use `=`. Make sure to wrap your string in single or double quotes.
-- Only two boolean values exist in Python: `True` and `False`. `TRUE`, `true`, `FALSE`, `false` and other versions will not be accepted.
+`@dica`
+- Para criar uma variável em Python, use `=`. Tenha certeza que sua string está entre aspas duplas ou simples.
+- Só existem dois valores booleanos em Python: `True` e `False`. `TRUE`, `true`, `FALSE`, `false` e outras versões não serão aceitas.
 
 `@pre_exercise_code`
 ```{python}
@@ -455,7 +455,7 @@ success_msg("Nice!")
 ```
 
 ---
-## Guess the type
+## Descubra o Tipo
 
 ```yaml
 type: MultipleChoiceExercise
@@ -465,22 +465,22 @@ skills: 2
 key: b35f67514c
 ```
 
-To find out the type of a value or a variable that refers to that value, you can use the [`type()`](https://docs.python.org/3/library/functions.html#type) function. Suppose you've defined a variable `a`, but you forgot the type of this variable. To determine the type of `a`, simply execute:
+Para descobrir o tipo de um valor ou uma variável que se refere ao valor, você pode usar a função [`type()`](https://docs.python.org/3/library/functions.html#type). Suponha que você definiu uma variável `a`, mas você esqueceu o tipo da variável. Para saber o tipo de `a`, simplesmente execute:
 
 ```
 type(a)
 ```
 
-We already went ahead and created three variables: `a`, `b` and `c`. You can use the IPython shell on the right to discover their type. Which of the following options is correct?
+Nós já avançamos e criamos três variáves: `a`, `b` and `c`. Você pode usar o IPython shell na direita para descobrir os tipos delas. Qual das opções é correta?
 
-`@instructions`
-- `a` is of type `int`, `b` is of type `str`, `c` is of type `bool`
-- `a` is of type `float`, `b` is of type `bool`, `c` is of type `str`
-- `a` is of type `float`, `b` is of type `str`, `c` is of type `bool`
-- `a` is of type `int`, `b` is of type `bool`, `c` is of type `str`
+`@instruções`
+- `a` é do tipo `int`, `b` é do tipo `str`, `c` é do tipo `bool`
+- `a` é do tipo `float`, `b` é do tipo `bool`, `c` é do tipo `str`
+- `a` é do tipo `float`, `b` é do tipo `str`, `c` é do tipo `bool`
+- `a` é do tipo `int`, `b` é do tipo `bool`, `c` é do tipo `str`
 
-`@hint`
-Use `type(a)`, `type(b)` and `type(c)` inside the IPython Shell to find out about the variables' types.
+`@dica`
+Use `type(a)`, `type(b)` e `type(c)` no IPython Shell para descobrir os tipos das variáveis.
 
 `@pre_exercise_code`
 ```{python}
@@ -499,7 +499,7 @@ test_mc(3,[msg1, msg2, msg3, msg4])
 ```
 
 ---
-## Operations with other types
+## Operações com outros tipos
 
 ```yaml
 type: NormalExercise
