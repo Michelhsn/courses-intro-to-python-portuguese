@@ -40,12 +40,12 @@ Você pode clicar em _Submit Answer_ quantas vezes quiser. Se você estiver trav
 
 Você pode também usar o IPython Shell interativamente simplesmente digitando comando e apertando Enter. Quando você trabalha no shell diretamente, seu código será checado para correção então essa é uma ótima forma de experimentar.
 
-`@instruções`
+`@instructions`
 - Expetimente usar o IPython Shell; digite `5 / 8`, por exemplo.
 - Adicione uma outra linha de código ao script Python: `print(7 + 10)`.
 - Aperte _Submit Answer_ para executar o script Python e receber o feedback.
 
-`@dica`
+`@hint`
 Simplesmente adicione `print(7 + 10)` no script da direita e aperte 'Submit Answer'.
 
 `@pre_exercise_code`
@@ -62,7 +62,7 @@ print(5 / 8)
 
 ```
 
-`@solução`
+`@solution`
 ```{python}
 # Exemplo, não modifique!
 print(5 / 8)
@@ -94,13 +94,13 @@ key: 9703b117fb
 
 Python é uma linguagem bem versátil. Em quais aplicações você pode usar Python?
 
-`@instruções`
+`@instructions`
 - Você quer fazer alguns cálculos rápidos.
 - Para seu novo negócio, você quer desenvolver um website direcionado a base de dados.
 - Seu chefe o pede para analisar os resultados da última pesquisa de satisfação.
 - Tudo acima.
 
-`@dica`
+`@hint`
 Filip mencionou no vídeo que o Python pode ser usado para construir praticamente qualquer parte de software.
 
 `@pre_exercise_code`
@@ -133,10 +133,10 @@ Uma coisa que Filip não mencionou nos seus vídeos é que você pode adicionar 
 
 Para adicionar comentários em seu script Python. você pode usar a tag `#`. Esses comentários não são executados como código Python, então eles não irão influenciar no resultado. Como um exemplo, pegue o comentário da direita, `# Just testing division`; este é completamente ignorado durante a execução.
 
-`@isntruções`
+`@instructions`
 Sobre o `print(7 + 10)`, adicione o comentário `# Addition works too`.
 
-`@dica`
+`@hint`
 Para esse exercício você pode adicionar uma linha de comentário. Isto não será executado no código Python. Adicione `# Addition works too` sobre `print(7 + 10)`.
 
 `@pre_exercise_code`
@@ -186,10 +186,10 @@ Python é perfeitamente viável para se fazer cálculos básicos. Além de adiç
 
 O código no script da direita trás alguns examplos.
 
-`@instruções`
+`@instructions`
 Suponha que você tem $100, você quer investi-lo com uma taxa de 10% de juros por ano. depois de um ano, terá $100 \times 1.1 = 110$ dólares, e depois de dois anos terá $100 \times 1.1 \times 1.1 = 121$. Adicione código na direita para calcular quanto você terá depois de 7 anos.
 
-`@dica`
+`@hint`
 Depois de dois anos voce tem $100 \times 1.1 \times 1.1 = 100 \times 1.1^2$. Quando você terá depois de 7 anos então? Use `*` e `**`.
 
 `@pre_exercise_code`
@@ -282,11 +282,11 @@ Você agora pode usar o nome desta variável, `x`, no lugar do valor atual, `5`.
 
 Lembre-se, `=` em Python significa _atribuição_, não igualdade!
 
-`@instruções`
+`@instructions`
 - Crie uma variável `savings` com o valor 100.
 - Verifique essa variável digitando `print(savings)` no script.
 
-`@dica`
+`@hint`
 - Digite `savings = 100` para criar uma variável `savings`.
 - Depois de criar a variável `savings`, você pode digitar `print(savings)`.
 
@@ -339,12 +339,12 @@ Lembre como você calculou o total que você conseguiu depois de 7 anos com o in
 
 No lugar de calcular os valores atuais, você pode usar variáveis. A variável `savings` que você criou no exercício anterior representa os $100 que você começou. Você pode criar uma nova variável para representar `1.10` e entaõ refazer os cálculos!
 
-`@instruções`
+`@instructions`
 - Crie uma variável `factor`, igual a `1.10`.
 - Use `savings` e `factor` para calcular o total que você conseguiu depois dos 7 anos. Armazene o resultado em uma variável nova, `result`.
 - Imprima os valores de `result`.
 
-`@dica`
+`@hint`
 - Para criar a variável variable `factor`, use `factor = 1.10`.
 - No bloco de código do exemplo de atribuição, substitua `100` por `savings` e `1.10` por `factor`: `savings * factor ** 7`.
 - Use a função [`print()`](https://docs.python.org/3/library/functions.html#print) para imprimir o valor da variável.
@@ -368,7 +368,7 @@ savings = 100
 # Imprima o resultado
 ```
 
-`@solução`
+`@solution`
 ```{python}
 # Crie a variável savings
 savings = 100
@@ -415,11 +415,11 @@ Depois dos tipos de dados numéricos, existem outros dois tipos de dados comuns:
 - `str`, ou string: um tipo que representa texto. Você pode usar aspas simples ou duplas para construir uma string.
 - `bool`, ou booleano: um tipo que representa valores lógicos. Pode ser apenas `True` ou `False` (A capitalização é importante!).
 
-`@instruções`
+`@instructions`
 - Crie uma nova string, `desc`, com o valor `"compound interest"`.
 - Crie um novo booleano, `profitable`, com o valor `True`.
 
-`@dica`
+`@hint`
 - Para criar uma variável em Python, use `=`. Tenha certeza que sua string está entre aspas duplas ou simples.
 - Só existem dois valores booleanos em Python: `True` e `False`. `TRUE`, `true`, `FALSE`, `false` e outras versões não serão aceitas.
 
@@ -473,13 +473,13 @@ type(a)
 
 Nós já avançamos e criamos três variáves: `a`, `b` and `c`. Você pode usar o IPython shell na direita para descobrir os tipos delas. Qual das opções é correta?
 
-`@instruções`
+`@instructions`
 - `a` é do tipo `int`, `b` é do tipo `str`, `c` é do tipo `bool`
 - `a` é do tipo `float`, `b` é do tipo `bool`, `c` é do tipo `str`
 - `a` é do tipo `float`, `b` é do tipo `str`, `c` é do tipo `bool`
 - `a` é do tipo `int`, `b` é do tipo `bool`, `c` é do tipo `str`
 
-`@dica`
+`@hint`
 Use `type(a)`, `type(b)` e `type(c)` no IPython Shell para descobrir os tipos das variáveis.
 
 `@pre_exercise_code`
@@ -491,10 +491,10 @@ c = False
 
 `@sct`
 ```{python}
-msg1 = "The type of `a` is not `int`. Try out `type(a)` and see for yourself."
-msg2 = "`b` is not a `bool`, it's a `str`! The fact that `True` is wrapped in double quotes makes it a string."
+msg1 = "O tipo de `a` não é `int`. Tente `type(a)` e veja por você mesmo."
+msg2 = "`b` não é um `bool`, é uma `str`! O fato de `True` estar entre aspas duplas faz dele uma string."
 msg3 = "Correcto perfecto!"
-msg4 = "None of the variable's types is correct here. Try `type(a)` and see what type this variable is."
+msg4 = "Nenhum dos tipos das variáveis estão corretos aqui. Tente `type(a)` e veja de que tipo a variável é."
 test_mc(3,[msg1, msg2, msg3, msg4])
 ```
 
@@ -509,23 +509,23 @@ skills: 2
 key: 4d0d83cc02
 ```
 
-Filip mentioned that different types behave differently in Python.
+Filip mencionou que diferentes tipos comportam de modo diferente em Python.
 
-When you sum two strings, for example, you'll get different behavior than when you sum two integers or two booleans.
+Quando vocêsoma duas strings, por exemplo, você terá diferente comportamento do que quando você soma dois inteiros ou dois booleanos.
 
-In the script some variables with different types have already been created. It's up to you to use them.
+No script algumas variáveis com diferentes tipos já foram criados. É com você usá-los.
 
 `@instructions`
-- Calculate the product of `savings` and `factor`. Store the result in `year1`.
-- What do you think the resulting type will be? Find out by printing out the type of `year1`.
-- Calculate the sum of `desc` and `desc` and store the result in a new variable `doubledesc`.
-- Print out `doubledesc`. Did you expect this?
+- Calcule o produto de `savings` e `factor`. Armazene o resultado em `year1`.
+- Qual você acha que será o resultado? Descubra imprimindo o tipo de `year1`.
+- Calcule a soma de `desc` e `desc` e armazene o resultado em uma nova variável `doubledesc`.
+- Imprima `doubledesc`. Você esperava por isso?
 
 `@hint`
-- Assign `factor * savings` to a new variable, `year1`.
-- To print the type of a variable `x`, use `print(type(x))`.
-- Assign `desc + desc` to a new variable, `doubledesc`.
-- To print a variable `x`, write `print(x)` in the script.
+- Atribua `factor * savings` a uma nova variável, `year1`.
+- Para imprimir o tipo da variável `x`, use `print(type(x))`.
+- Atribua `desc + desc` a uma nova variável, `doubledesc`.
+- Para imprimir a variável `x`, escreva `print(x)` no script.
 
 `@pre_exercise_code`
 ```{python}
